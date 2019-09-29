@@ -1,0 +1,150 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    h1 {
+        color: #DB0024;
+        border-bottom: 1px solid #FFFFFF;
+        width: 40%;
+        padding-top: 4rem;
+        margin-left: 3rem;
+    }
+    .contact {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 3rem;
+        .contact-form-container{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .form-header {
+                position: absolute;
+                top: -2rem;
+                display: flex;
+                flex-direction: row nowrap;
+                align-content: center;
+                justify-content: center;
+                width: 70%;
+                vertical-align: middle;
+                background-color: #DB0024;
+                color: #343A40;
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+                height: 5rem;
+                line-height: 5rem;
+                align-self: center;
+                box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.58);
+                .material-icons {
+                    font-size: 2rem;
+                    line-height: 5rem;
+                }
+            }
+            .form-body {
+                background-color: #FFFFFF;
+                padding: 3rem;
+                padding-top: 5rem;
+                box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.58);
+                display: flex;
+                flex-direction: column;
+                .form-container {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                }
+                button {
+                    border: 2px solid;
+                    align-self: center;
+                    width: 70%;
+                }
+            }
+        }
+        .aside-container {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            .map-container {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                .address-info {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2rem;
+                    overflow: hidden;
+                    .header {
+                        display: flex;
+                        flex-direction: row nowrap;
+                        font-size: 2rem;
+                        background-color: #DB0024;
+                        color: #343A40;
+                        font-weight: bold;
+                        width: 100%;
+                        height: 5rem;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.58);
+                        .material-icons {
+                            font-size: 2rem;
+                        }
+                    }
+                    .address {
+                        color: #FFFFFF;
+                        margin-top: 3rem;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        .name {
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                        }
+                    }
+                    .info {
+                        margin-top: 2rem;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+                .mapouter{
+                    position:relative;
+                    text-align:right;
+                    height:500px;
+                    width:600px;
+                    display: flex;
+                    justify-content: center;
+                }
+                    .gmap_canvas {
+                        align-self: center;
+                        justify-self: center;
+                        overflow:hidden;
+                        background:none !important;
+                        height:300px;
+                        width:500px;
+                    }
+            }
+            .contact-info {
+                color: #FFFFFF;
+                display: flex;
+                flex-flow: row wrap;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                .phone, .email, .fax {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    .material-icons, span{
+                        text-align: center;
+                    }
+                    .material-icons {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

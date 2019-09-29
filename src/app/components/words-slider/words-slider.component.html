@@ -1,0 +1,12 @@
+<header class="slider-container">
+    <h1>
+        {{firstConstantString}}
+      <div class="words-container">
+        <ul class="words-list">
+            <li class="word" *ngFor="let word of slidingWords">{{word}}</li>
+            <li class="word">{{slidingWords[0]}}</li>
+        </ul>
+      </div>
+      {{secondConstantString}}
+    </h1>
+  </header>

@@ -1,1 +1,32 @@
-<p>main-screen works!</p>
+<div class="app-container" appScrollTracking (scrollPosition)="showArrowOnScroll($event)">
+    <header id="header">
+      <app-navbar (scrollTo)="scrollTo($event)"></app-navbar>
+      <app-words-slider [firstConstantString]="firstConstantString"
+        [slidingWords]="slidersWords">
+      </app-words-slider>
+      <i class="material-icons" (click)="scrollTo('news')">
+        keyboard_arrow_down
+        </i>
+    </header>
+    <main>
+      <section id="news">
+        <app-news></app-news>
+      </section>
+      <section id="products">
+        <app-products></app-products>
+      </section>
+      <section id="catalogs">
+        <app-catalogs></app-catalogs>
+      </section>
+      <section id="gallery">
+        <app-gallery></app-gallery>
+      </section>
+    </main>
+    <footer id="contact">
+      <app-contact></app-contact>
+    </footer>
+  </div>
+
+  <i class="material-icons top" *ngIf="goTopArrow" (click)="scrollTo('header')">
+      keyboard_arrow_up
+  </i>

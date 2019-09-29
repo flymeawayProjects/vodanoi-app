@@ -1,0 +1,26 @@
+.gallery-container {
+    min-height: 100vh;
+    background-color:  #DB0024;
+    h1 {
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+        width: 40%;
+        padding-top: 4rem;
+        margin-left: 3rem;
+    }
+    .slider {
+        .gallery {
+            .carousel {
+                .carousel-inner {
+                    background-color: #343A40;
+                    .carousel-item {
+                        img{
+                            width: auto;
+                            height: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

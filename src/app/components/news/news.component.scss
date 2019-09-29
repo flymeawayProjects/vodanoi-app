@@ -1,0 +1,24 @@
+.news-container {
+    h1 {
+        color: #DB0024;
+        border-bottom: 1px solid grey;
+        width: 40%;
+        padding-top: 3rem;
+        margin-left: 3rem;
+    }
+    display: flex;
+    padding: 2rem;
+    flex-flow: row wrap;
+    align-content: space-between;
+    overflow: hidden;
+    .row {
+        .news-card-container {
+            width: 100%;
+            margin-top: 1rem;
+            .news-item {
+                width: 400px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

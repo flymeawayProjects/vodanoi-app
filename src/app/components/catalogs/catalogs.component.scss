@@ -1,0 +1,17 @@
+.catalogs-container {
+    min-height: 100vh;
+    padding: 3rem;
+    h1 {
+        color: #DB0024;
+        border-bottom: 1px solid grey;
+        width: 40%;
+        padding-top: 1rem;
+        margin-left: 3rem;
+    }
+
+    .cards-container {
+        .col-md-6 {
+            margin-top: 2rem;
+        }
+    }
+}
