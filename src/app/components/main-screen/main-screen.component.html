@@ -13,11 +13,12 @@
         <app-news></app-news>
       </section>
       <section id="products">
-        <app-products></app-products>
+        <app-products *ngIf="showProducts" (showProducts)="setShowProducts($event)"></app-products>
+        <app-products-browse *ngIf="!showProducts" (showProducts)="setShowProducts($event)"></app-products-browse>
       </section>
-      <section id="catalogs">
+      <!-- <section id="catalogs">
         <app-catalogs></app-catalogs>
-      </section>
+      </section> -->
       <section id="gallery">
         <app-gallery></app-gallery>
       </section>

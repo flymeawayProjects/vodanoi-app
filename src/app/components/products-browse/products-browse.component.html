@@ -1,0 +1,32 @@
+<div class="products-container bg-dark">
+    <h1>#PRODUKTY</h1>
+    <div class="products-items-container row">
+        <div class="menu col-lg-4 col-md-4">
+            <ng-material-multilevel-menu  
+                [configuration]='config' 
+                [items]='appitems'
+                (selectedItem)="selectedItem($event)" 
+                (selectedLabel)="selectedLabel($event)">
+            </ng-material-multilevel-menu> 
+        </div>
+        <div class="item-content col-lg-8 col-md-8" *ngIf="showContent">
+                <mat-card class="item-card">
+                        <mat-card-header>
+                          <div mat-card-avatar class="example-header-image"></div>
+                          <mat-card-title>Nazwa produktu</mat-card-title>
+                          <mat-card-subtitle>Przykładowy skrocony opis</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="https://www.rajbud.biz/img/narzedzia-i-elektronarzedzia.jpg" alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                          <p>
+                            TUTAJ MOŻNA DAĆ DŁUŻSZY OPIS PRODUKTU, JEGO PARAMETRY, WSZYSTKIE INFORMACJE NA JEGO TEMAT.
+                          </p>
+                        </mat-card-content>
+                        <!-- <mat-card-actions>
+                          <button mat-button>LIKE</button>
+                          <button mat-button>SHARE</button>
+                        </mat-card-actions> -->
+                </mat-card>
+        </div>       
+    </div>
+</div>

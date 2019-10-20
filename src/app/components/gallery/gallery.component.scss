@@ -1,25 +1,24 @@
 .gallery-container {
     min-height: 100vh;
-    background-color:  #DB0024;
+    background-color:  #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 2rem;
+    padding-right: 2rem;
     h1 {
-        color: #FFFFFF;
-        border-bottom: 1px solid #FFFFFF;
+        color: #DB0024;
+        border-bottom: 1px solid #DB0024;
         width: 40%;
         padding-top: 4rem;
         margin-left: 3rem;
     }
-    .slider {
+    .gallery-items {
+        display: flex;
+        flex-direction: row;
         .gallery {
-            .carousel {
-                .carousel-inner {
-                    background-color: #343A40;
-                    .carousel-item {
-                        img{
-                            width: auto;
-                            height: 400px;
-                        }
-                    }
-                }
+            ngx-gallery ::ng-deep ngx-gallery-image .ngx-gallery-arrow {
+                color: rgb(52, 58, 64);
             }
         }
     }

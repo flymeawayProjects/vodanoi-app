@@ -1,0 +1,30 @@
+.products-container {
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    h1 {
+        color: #DB0024;
+        border-bottom: 1px solid #FFFFFF;
+        width: 40%;
+        padding-top: 4rem;
+        margin-left: 3rem;
+    }
+    .products-items-container {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        justify-content: space-between;
+        .item-content {
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            .item-card {
+                max-width: 500px;
+            }
+        }
+    }
+}
+     

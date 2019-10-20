@@ -13,9 +13,11 @@ export class MainScreenComponent implements OnInit {
   slidersWords = ['WIEDZA', 'JAKOŚĆ', 'DOŚWIADCZENIE'];
   goTopArrow = false;
 
+  showProducts: boolean;
   constructor() { }
 
   ngOnInit() {
+    this.showProducts = true;
   }
 
   scrollTo(element: string) {
@@ -26,4 +28,10 @@ export class MainScreenComponent implements OnInit {
   showArrowOnScroll(scrollPosition: number) {
     this.goTopArrow = scrollPosition > 700 ? true : false;
   }
+
+  setShowProducts(event) {
+    console.log('set', event);
+    this.showProducts = event;
+  }
+
 }
